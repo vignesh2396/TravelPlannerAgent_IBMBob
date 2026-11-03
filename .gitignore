@@ -1,0 +1,70 @@
+# =============================================================
+# AI Travel Planner — Multi-Agent System
+# .gitignore
+# =============================================================
+
+# --------------- Secrets ---------------
+.env
+*.env
+!.env.example
+
+# --------------- Python ---------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+*.spec
+
+# --------------- Virtual environments ---------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --------------- Testing ---------------
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+coverage.xml
+.tox/
+nosetests.xml
+
+# --------------- IDE & editors ---------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# --------------- OS ---------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --------------- Large generated files ---------------
+# Video is generated locally — skip the 13 MB MP4 from git
+AI_Travel_Planner_MAS.mp4
+
+# Temporary TTS audio cache
+*.wav
+
+# --------------- Logs ---------------
+*.log
+logs/
+
+# --------------- Type checking ---------------
+.mypy_cache/
+.pytype/
