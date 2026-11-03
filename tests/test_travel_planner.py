@@ -46,8 +46,9 @@ class TestMockData:
         assert all(f["simulated"] for f in flights)
 
     def test_get_flights_budget_filter(self):
-        flights = get_flights(budget=250)
-        assert all(f["fare_usd"] <= 250 for f in flights)
+        # Fares are in INR (lowest mock fare = ₹13,500); use 15000 as boundary
+        flights = get_flights(budget=15000)
+        assert all(f["fare_usd"] <= 15000 for f in flights)
         assert len(flights) > 0
 
     def test_get_hotels_no_filter(self):
